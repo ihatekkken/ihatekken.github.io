@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html >
-<head>
-<meta charset="UTF-8">
-<title>Ken - Things</title>
-
-<script src="assets/js/jrj6out.js"></script>
-<script>try{Typekit.load({ async: false });}catch(e){}</script>
-
-<style>
-  body {
+body {
   position: relative;
   margin: 0;
   overflow: hidden;
@@ -234,59 +224,3 @@ h1 {
   left: 7px;
   color: #E62117;
 }
-
-</style>
-
-<script src="assets/js/prefixfree.min.js"></script>
-
-</head>
-
-<body>
-<div class="x-mark">
-	<div class="container">
-		<div class="left"></div>
-		<div class="right"></div>
-	</div>
-</div>
-<div class="intro-container">
-	
-	<h1>谢谢赏脸打开我的网页 <br> 给你留了个小彩蛋</h1>
-
-	<div class="button shift-camera-button">
-		<div class="border">
-			<div class="left-plane"></div>
-			<div class="right-plane"></div>
-		</div>	
-		<div class="text">点一下起飞</div>
-	</div>
-</div>
-<div class="sky-container">
-	<div class="text-right sky-container__left">
-		<h2 class="portfolio">
-			家乾祝你明年
-		</h2>
-		<h2 class="resurrection">
-			身体健康快乐常伴	
-		</h2>
-	</div>
-	<div class="text-left sky-container__right">
-		<h2 class="08">
-			12
-		</h2>
-		<h2 class="thirty-one">
-			16
-		</h2>
-		<h2 class="2016">
-			2020
-		</h2>
-	</div>
-</div>
-
-
-<script src='assets/js/jquery.min.js'></script>
-<script src='assets/js/TweenMax.min.js'></script>
-<script src='assets/js/three.min.js'></script>
-<script src="assets/js/index.js"></script>
-</div>
-</body>
-</html>
