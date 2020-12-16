@@ -1,50 +1,63 @@
 <!DOCTYPE HTML>
 
 <html>
-	<head>
-		<title>KEN IS HERE - Profile page</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="assets/icons/k.png" type="image/x-icon">
-		
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Hello, My Name is Ken!</h1>
-						<!-- <p>Positive &nbsp;&bull;&nbsp; Younger &nbsp;&bull;&nbsp; Never Give Up</p> -->
-						<p>&nbsp;&bull;&nbsp;我有一个大大的梦想和一个小小的心愿&nbsp;&bull;&nbsp;</p>
-						<h3><a href="post.html"><span>Posts</span></a></h3>
-						<h3><a href="things.html"><span>Things</span></a></h3>
-						<nav>
-							<!-- <ul>
+<head>
+	<title>KEN IS HERE - Profile page</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="icon" href="assets/icons/k.png" type="image/x-icon">
+
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<div id="bg"></div>
+		<div id="overlay"></div>
+		<div id="main">
+
+			<!-- Header -->
+			<header id="header">
+				<h1>Hello, My Name is Ken!</h1>
+				<!-- <p>Positive &nbsp;&bull;&nbsp; Younger &nbsp;&bull;&nbsp; Never Give Up</p> -->
+				<p>&nbsp;&bull;&nbsp;我有一个大大的梦想和一个小小的心愿&nbsp;&bull;&nbsp;</p>
+				<h3><a href="post.html"><span>Posts</span></a></h3>
+				<h3><a href="things.html"><span>Things</span></a></h3>
+				<nav>
+					<!-- <ul>
 								<li><a href="#" class="icon brands fa-twitter"><span class="label">1</span></a></li>
 								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">2</span></a></li>
 								<li><a href="#" class="icon brands fa-dribbble"><span class="label">3</span></a></li>
 								<li><a href="#" class="icon brands fa-github"><span class="label">4</span></a></li>
 								<li><a href="#" class="icon solid fa-envelope"><span class="label">5</span></a></li>
 							</ul> -->
-						</nav>
-					</header>
+				</nav>
+			</header>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<span class="copyright">Welcome to my pages</span>
-					</footer>
+			<!-- Footer -->
+			<footer id="footer">
+				<span class="copyright">Welcome to my pages</span>
+			</footer>
 
-			</div>
 		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return true; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+	</div>
+	<script>
+		window.onload = function () {
+			document.body.classList.remove('is-preload');
+		}
+		window.ontouchmove = function () {
+			return true;
+		}
+		window.onorientationchange = function () {
+			document.body.scrollTop = 0;
+		}
+	</script>
+	<canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+	<script type="text/javascript" src="assets/js/anime.min.js"></script>
+	<script type="text/javascript" src="assets/js/fireworks.js"></script>
+</body>
+
 </html>
