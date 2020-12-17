@@ -279,14 +279,16 @@
 
 		/* 悬浮按钮 */
 		.float-button {
-			position: fixed;
+			position: absolute;
 			height: 40px;
 			width: 40px;
-			bottom: 90px;
-			right: 20px;
-			background: #f3f1ee;
+			/* bottom: 90px;
+			right: 20px; */
+			padding-top: 15px;
+			padding-left: 15px;
+			background:rgba(55, 116, 63, 0);
 		}
-		.float-button a :active{
+		.float-button a :active{ 
 			color: #000;
 		}
 		.float-button a ::-webkit-textfield-decoration-container{
@@ -339,7 +341,9 @@
 		</div> -->
 	</div>
 	<div class="float-button">
-		<a href="javascript:history.back(-1)" >返回</a>
+		<a href="javascript:history.back(-1)" >
+			<img src="assets/images/back2.png" alt="" height=40 width="40">
+		</a>
 	</div>
 
 
