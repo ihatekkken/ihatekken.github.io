@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -279,7 +279,7 @@
 
 		/* 悬浮按钮 */
 		.float-button {
-			position: absolute;
+			position: fixed;
 			height: 40px;
 			width: 40px;
 			/* bottom: 90px;
@@ -287,12 +287,20 @@
 			padding-top: 15px;
 			padding-left: 15px;
 			background:rgba(55, 116, 63, 0);
+			text-align: center;
+			display: flex;
 		}
 		.float-button a :active{ 
 			color: #000;
 		}
 		.float-button a ::-webkit-textfield-decoration-container{
 			border-style: none;
+		}
+		.float-button a img{
+			color: rgba(13, 237, 245, 0);
+		}
+		.float-button a img{
+			filter: 
 		}
 	</style>
 
@@ -342,7 +350,7 @@
 	</div>
 	<div class="float-button">
 		<a href="javascript:history.back(-1)" >
-			<img src="assets/images/back2.png" alt="" height=40 width="40">
+			<img src="assets/images/back2.png" alt="" height=60 width="60">
 		</a>
 	</div>
 
