@@ -159,56 +159,18 @@
 		}
 
 		.sky-container {
-			position: absolute;
+			position: fixed;
 			color: white;
-			text-transform: uppercase;
-			margin: 0 auto;
-			right: 0;
-			left: 0;
+			right: 10%;
+			left: 10%;
 			top: 2%;
-			text-align: center;
 			opacity: 0;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			display: flex;
+
 		}
 
-		@media screen and (min-width: 860px) {
-			.sky-container {
-				top: 18%;
-				right: 12%;
-				left: auto;
-			}
-		}
-
-		.sky-container__left,
-		.sky-container__right {
-			display: inline-block;
-			vertical-align: top;
-			font-weight: bold;
-		}
-
-		.sky-container__left h2,
-		.sky-container__right h2 {
-			font-family: 'brandon-grotesque', sans-serif;
-			font-size: 26px;
-			line-height: 26px;
-			margin: 0;
-		}
-
-		@media screen and (min-width: 860px) {
-
-			.sky-container__left h2,
-			.sky-container__right h2 {
-				font-size: 72px;
-				line-height: 68px;
-			}
-		}
-
-		.sky-container__left {
-			margin-right: 5px;
-		}
-
-		.sky-container .thirty-one {
-			letter-spacing: 4px;
-		}
 
 		.text-right {
 			text-align: right;
@@ -216,65 +178,6 @@
 
 		.text-left {
 			text-align: left;
-		}
-
-		.twitter:hover a {
-			transform: rotate(-45deg) scale(1.05);
-		}
-
-		.twitter:hover i {
-			color: #21c2ff;
-		}
-
-		.twitter a {
-			bottom: -40px;
-			right: -75px;
-			transform: rotate(-45deg);
-		}
-
-		.twitter i {
-			bottom: 7px;
-			right: 7px;
-			color: #00ACED;
-		}
-
-		.social-icon a {
-			position: absolute;
-			background: white;
-			color: white;
-			box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
-			display: inline-block;
-			width: 150px;
-			height: 80px;
-			transform-origin: 50% 50%;
-			transition: .15s ease-out;
-		}
-
-		.social-icon i {
-			position: absolute;
-			pointer-events: none;
-			z-index: 1000;
-			transition: .15s ease-out;
-		}
-
-		.youtube:hover a {
-			transform: rotate(45deg) scale(1.05);
-		}
-
-		.youtube:hover i {
-			color: #ec4c44;
-		}
-
-		.youtube a {
-			bottom: -40px;
-			left: -75px;
-			transform: rotate(45deg);
-		}
-
-		.youtube i {
-			bottom: 7px;
-			left: 7px;
-			color: #E62117;
 		}
 
 		/* 悬浮按钮 */
@@ -299,9 +202,56 @@
 		.float-button a img{
 			color: rgba(13, 237, 245, 0);
 		}
-		.float-button a img{
-			filter: 
+
+		/* 悬浮卡片 */
+	
+    .sky-container .box{
+      position: relative;
+      width: 200px;
+      padding: 100px 40px 60px;
+      background-color:cadetblue;
+      margin-top: 5em;
+      box-shadow: 0 15px 45px rgb(238, 230, 230,0.5);
+    }
+    .sky-container .box:before{
+      content: '';
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(175, 106, 106);
+      transform: scaleY(0);
+      transform-origin:top ;
+      transition: transform 0.5s;
+    }
+    .sky-container .box:hover:before{
+      transform: scaleY(1);
+      transform-origin: bottom;
+      transition: transform 0.5s;
+    }
+    .sky-container .box h2{
+			position: absolute;
+      left: 40px;
+      top: 60px;
+      font-size: 4em;
+      font-weight: 800;
+      z-index: 1;
+      opacity: 0.5;
+      transition: 0.5s;
 		}
+		.sky-container .box p a{
+			position: absolute;
+      left: 40px;
+      top: 60px;
+      font-size: 4em;
+      font-weight: 800;
+      z-index: 1;
+      opacity: 0.5;
+      transition: 0.5s;
+		}
+		
+
 	</style>
 
 	<script src="assets/js/prefixfree.min.js"></script>
@@ -327,8 +277,9 @@
 			<div class="text">点一下起飞</div>
 		</div>
 	</div>
+	
 	<div class="sky-container">
-		<div class="text-right sky-container__left">
+		<!-- <div class="text-right sky-container__left">
 			<h2 class="portfolio">
 				家乾祝你
 			</h2>
@@ -336,18 +287,32 @@
 				身体健康快乐常伴
 			</h2>
 		</div>
-		<!-- <div class="text-left sky-container__right">
-			<h2 class="08">
-				12
-			</h2>
-			<h2 class="thirty-one">
-				16
-			</h2>
-			<h2 class="2016">
-				2020
-			</h2>
-		</div> -->
-	</div>
+	 -->
+	 
+    <div class="box">
+      <h2>01</h2>
+      <h3>title</h3>
+      <p><a href="game/1-FruitNinja/index.html" target="view_window">这是水果忍者</a></p>
+
+    </div>
+
+    <div class="box">
+      <h2>02</h2>
+      <h3>title</h3>
+      <p>我觉得有必要写点什么，但是又不知道要写什么</p>
+
+    </div>
+	
+
+    <div class="box">
+      <h2>03</h2>
+      <h3>title</h3>
+      <p>我觉得有必要写点什么，但是又不知道要写什么</p>
+
+    </div>
+  </div>
+	
+	
 	<div class="float-button">
 		<a href="javascript:history.back(-1)" >
 			<img src="assets/images/back2.png" alt="" height=60 width="60">
