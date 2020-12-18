@@ -243,17 +243,28 @@
       opacity: 0.5;
       transition: 0.5s;
 		}
-		.sky-container .box p a{
+		.sky-container .box:hover h2{
 			position: absolute;
-      left: 40px;
-      top: 60px;
-      font-size: 4em;
-      font-weight: 800;
-      z-index: 1;
-      opacity: 0.5;
-      transition: 0.5s;
+      /* opacity: 0.5; */
+			transform: translateY(-40px);
 		}
-		
+		.sky-container .box h3{
+			position: relative;
+			font-size: 1.5em;
+			z-index: 2;
+			color: coral;
+			transition: 0.5s;
+		}
+		.sky-container .box p{
+			position: relative;
+			z-index: 2;
+			color: coral;
+			transition: 0.5s;
+		}
+		.sky-container .box:hover h3,
+		.sky-container .box:hover p{
+			color: cyan;
+		}
 
 	</style>
 
@@ -270,7 +281,7 @@
 	</div>
 	<div class="intro-container">
 
-		<h1>谢谢赏脸打开我的网页 <br> 给你留了个小彩蛋</h1>
+		<h1>感谢你的光临 <br> 给你留了些小彩蛋</h1>
 
 		<div class="button shift-camera-button">
 			<div class="border">
