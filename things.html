@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Ken - Things</title>
+	<link rel="icon" href="assets/icons/k.png" type="image/x-icon">
+
 
 	<script src="assets/js/jrj6out.js"></script>
 	<script>
@@ -30,6 +32,7 @@
 			margin: 0 auto;
 			right: 0;
 			left: 0;
+			z-index: 999;
 		}
 
 		h1 {
@@ -222,6 +225,7 @@
       margin-top: 5em;
 			box-shadow: 0 15px 45px rgb(238, 230, 230,0.5);
 			border-radius: 15px;
+			z-index: 997;
     }
     .sky-container .box:before{
       content: '';
@@ -274,6 +278,12 @@
 		.sky-container .box:hover p span{
 			color: #dbf5f5;
 		}
+		.box2 {
+			width: 200px;
+			height: 400px;
+			position: relative;
+			z-index: 998;
+		}
 
 	</style>
 
@@ -300,7 +310,10 @@
 			<div class="text">点一下起飞</div>
 		</div>
 	</div>
-	
+	<div class="sky-container">
+		<div class="box2"></div><div class="box2"></div><div class="box2"></div>
+
+	</div>
 	<div class="sky-container">
 		<!-- <div class="text-right sky-container__left">
 			<h2 class="portfolio">
