@@ -1079,3 +1079,9 @@ input, select, textarea {
 		#header nav {
 			padding: 0 1em;
 		} }
+
+/*my*/
+::selection {
+  background: #262a30;
+  color: #eee;
+}
