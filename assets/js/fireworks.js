@@ -181,7 +181,7 @@ class Boom {
       const circle = new Circle({
         context: this.context,
         origin: this.origin,
-        color: this.randomColor(),
+        // color: this.randomColor(),
         angle: this.randomRange(Math.PI - 1, Math.PI + 1),
         speed: this.randomRange(1, 6)
       })

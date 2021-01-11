@@ -1,4 +1,3 @@
-
 <html>
 
 <head>
@@ -42,13 +41,13 @@
 			margin-bottom: 0;
 			font-size: 20px;
 		}
-		a{
+
+		a {
 			text-decoration: none;
-			color:rgb(6, 53, 68)
-			
+			color: rgb(6, 53, 68)
 		}
-	
-		span{
+
+		span {
 			font-family: 'brandon-grotesque', sans-serif;
 		}
 
@@ -201,90 +200,100 @@
 			right: 20px; */
 			padding-top: 15px;
 			padding-left: 15px;
-			background:rgba(55, 116, 63, 0);
+			background: rgba(55, 116, 63, 0);
 			text-align: center;
 			display: flex;
 		}
-		.float-button a :active{ 
+
+		.float-button a :active {
 			color: #000;
 		}
-		.float-button a ::-webkit-textfield-decoration-container{
+
+		.float-button a ::-webkit-textfield-decoration-container {
 			border-style: none;
 		}
-		.float-button a img{
+
+		.float-button a img {
 			color: rgba(13, 237, 245, 0);
 		}
 
 		/* 悬浮卡片 */
-	
-    .sky-container .box{
-      position: relative;
-      width: 200px;
-      padding: 100px 40px 60px;
-      background-color:rgb(177, 228, 230);
-      margin-top: 5em;
-			box-shadow: 0 15px 45px rgb(238, 230, 230,0.5);
+
+		.sky-container .box {
+			position: relative;
+			width: 200px;
+			padding: 100px 40px 60px;
+			background-color: rgb(177, 228, 230);
+			margin-top: 5em;
+			box-shadow: 0 15px 45px rgb(238, 230, 230, 0.5);
 			border-radius: 15px;
 			z-index: 997;
-    }
-    .sky-container .box:before{
-      content: '';
-      position:absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgb(20, 1, 1);
-      transform: scaleY(0);
-      transform-origin:top ;
-			transition: transform 0.5s;
-			border-radius: 15px
-    }
-    .sky-container .box:hover:before{
-      transform: scaleY(1);
-      transform-origin: bottom;
-			transition: transform 0.5s;
-			border-radius: 15px
-    }
-    .box h2{
-			position: absolute;
-      left: 30px;
-      top: 20px;
-      font-size: 4em;
-      font-weight: 800;
-      z-index: 1;
-      opacity: 0.5;
-      transition: 0.5s;
 		}
-		.sky-container .box:hover h2{
+
+		.sky-container .box:before {
+			content: '';
 			position: absolute;
-      opacity: 0.5;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgb(20, 1, 1);
+			transform: scaleY(0);
+			transform-origin: top;
+			transition: transform 0.5s;
+			border-radius: 15px
+		}
+
+		.sky-container .box:hover:before {
+			transform: scaleY(1);
+			transform-origin: bottom;
+			transition: transform 0.5s;
+			border-radius: 15px
+		}
+
+		.box h2 {
+			position: absolute;
+			left: 30px;
+			top: 20px;
+			font-size: 4em;
+			font-weight: 800;
+			z-index: 1;
+			opacity: 0.5;
+			transition: 0.5s;
+		}
+
+		.sky-container .box:hover h2 {
+			position: absolute;
+			opacity: 0.5;
 			transform: translateY(-40px);
 		}
-		.sky-container .box h3{
+
+		.sky-container .box h3 {
 			position: relative;
 			font-size: 1.5em;
 			z-index: 2;
 			color: rgb(15, 22, 124);
 			transition: 0.5s;
 		}
-		.sky-container .box p{
+
+		.sky-container .box p {
 			position: relative;
 			z-index: 2;
 			color: coral;
 			transition: 0.5s;
 		}
+
 		.sky-container .box:hover h3,
-		.sky-container .box:hover p span{
+		.sky-container .box:hover p span {
 			color: #dbf5f5;
 		}
+
 		.box2 {
 			width: 200px;
 			height: 400px;
 			position: relative;
 			z-index: 998;
 		}
-
 	</style>
 
 	<script src="assets/js/prefixfree.min.js"></script>
@@ -311,7 +320,9 @@
 		</div>
 	</div>
 	<div class="sky-container">
-		<div class="box2"></div><div class="box2"></div><div class="box2"></div>
+		<div class="box2"></div>
+		<div class="box2"></div>
+		<div class="box2"></div>
 
 	</div>
 	<div class="sky-container">
@@ -324,33 +335,36 @@
 			</h2>
 		</div>
 	 -->
-	 
-    <div class="box">
-      <h2>01</h2>
-      <h3>接火球</h3>
-      <p><a href="game/fireball/index.html" target="view_window"><span>这是一个我觉得还算可以缓解压力的一个小游戏，当我有时候想不出内容的时候就会玩一下，很容易就让我投入进去。（点击这里）</span></a></p>
 
-    </div>
+		<div class="box">
+			<h2>01</h2>
+			<h3>接火球</h3>
+			<p><a href="game/fireball/index.html"
+					target="view_window"><span>这是一个我觉得还算可以缓解压力的一个小游戏，当我有时候想不出内容的时候就会玩一下，很容易就让我投入进去。（点击这里）</span></a></p>
 
-    <div class="box">
-      <h2>02</h2>
-      <h3>开飞机</h3>
-      <p><a href="game/plane/index.html" target="view_window"><span>这个游戏当时第一次让我惊讶了，可能是是我太low了于是我盯着它的源码，然后看不懂，但是还是觉得挺好玩的。（点击这里）</span></a></p>
+		</div>
 
-    </div>
-	
+		<div class="box">
+			<h2>02</h2>
+			<h3>开飞机</h3>
+			<p><a href="game/plane/index.html"
+					target="view_window"><span>这个游戏当时第一次让我惊讶了，可能是是我太low了于是我盯着它的源码，然后看不懂，但是还是觉得挺好玩的。（点击这里）</span></a></p>
 
-    <div class="box">
-      <h2>03</h2>
-      <h3>射箭</h3>
-      <p><a href="game/shot/index.html" target="view_window"><span>这个小游戏，是挺简单的一款游戏，我有想过将靶子换成特朗普的头像的，但想了想还是算了。。。（点击这里）</span></a></p>
+		</div>
 
-    </div>
-  </div>
-	
-	
+
+		<div class="box">
+			<h2>03</h2>
+			<h3>射箭</h3>
+			<p><a href="game/shot/index.html"
+					target="view_window"><span>这个小游戏，是挺简单的一款游戏，我有想过将靶子换成特朗普的头像的，但想了想还是算了。。。（点击这里）</span></a></p>
+
+		</div>
+	</div>
+
+
 	<div class="float-button">
-		<a href="javascript:history.back(-1)" >
+		<a href="javascript:history.back(-1)">
 			<img src="assets/images/back2.png" alt="" height=60 width="60">
 		</a>
 	</div>
