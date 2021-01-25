@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f4f4f4;
+		background: #161616;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2631,7 +2631,7 @@ input, select, textarea {
 		-webkit-flex-direction: column-reverse;
 		-ms-flex-direction: column-reverse;
 		flex-direction: column-reverse;
-		background: #ffffff;
+		background: #d4d6d6;
 		border: solid 1px rgba(160, 160, 160, 0.3);
 		margin: 0 0 2em 0;
 	}
